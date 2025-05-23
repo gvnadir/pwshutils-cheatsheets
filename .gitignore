@@ -1,0 +1,24 @@
+# PowerShell artifacts
+*.psd1.psc1
+*.ps1~  # Backup files
+*.ps1.swp
+*.ps1.swo
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS/Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Cache/output (if you generate docs or data)
+*.zip
+*.tar.gz
+.cache/
