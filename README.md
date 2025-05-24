@@ -18,7 +18,7 @@ Install-Module -Name PwshUtils.CheatSheets -Scope CurrentUser
 
 ### `Get-VimCheatSheet [<Filter>]`
 Displays a categorized Vim cheat sheet.  
-You can pass an optional filter to search within the `Command` column.
+You can pass an optional filter to search within the `Command` and `Description` column.
 
 ```powershell
 Get-VimCheatSheet
