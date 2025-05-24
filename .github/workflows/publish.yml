@@ -20,5 +20,5 @@ jobs:
 
       - name: Publish module to PowerShell Gallery
         run: |
-          Publish-Module -Path ./PwshUtils.CheatSheets.psd1 -NuGetApiKey "${{ secrets.PSGALLERY_API_KEY }}"
+          Publish-Module -Path . -NuGetApiKey "${{ secrets.PSGALLERY_API_KEY }}"
         shell: pwsh
