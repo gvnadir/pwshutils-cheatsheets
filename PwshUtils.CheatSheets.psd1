@@ -33,7 +33,7 @@ Copyright = '(c) GVNADIR. All rights reserved.'
 Description = 'PowerShell module providing cheat sheets and quick-reference commands for common tools, platforms, and environments.'
 
 # Minimum version of the PowerShell engine required by this module
-PowerShellVersion = '7.0'
+# PowerShellVersion = ''
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''

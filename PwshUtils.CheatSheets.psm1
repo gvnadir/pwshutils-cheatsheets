@@ -81,7 +81,8 @@ Function Get-VimCheatSheet {
 
 	if ($Filter) {
 		$data = $data | Where-Object {
-			$_.Command -ilike "*$Filter*"
+			$_.Command -ilike "*$Filter*" -or
+			$_.Description -ilike "*$Filter*"
 		}
 	}
 	

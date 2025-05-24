@@ -1,0 +1,24 @@
+name: Publish to PowerShell Gallery
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    name: Publish PowerShell module
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install PowerShellGet
+        run: Install-Module -Name PowerShellGet -Force -Scope CurrentUser
+        shell: pwsh
+
+      - name: Publish module to PowerShell Gallery
+        run: |
+          Publish-Module -Path ./PwshUtils.CheatSheets -NuGetApiKey "${{ secrets.PSGALLERY_API_KEY }}"
+        shell: pwsh
