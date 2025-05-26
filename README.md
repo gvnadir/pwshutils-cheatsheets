@@ -9,7 +9,7 @@
 Install the module from PowerShell Gallery:
 
 ```powershell
-Install-Module -Name PwshUtils.CheatSheets -Scope CurrentUser
+Install-Module -Name PwshUtils.CheatSheets
 ```
 
 ---
